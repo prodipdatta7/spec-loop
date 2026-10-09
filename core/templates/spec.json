@@ -1,0 +1,15 @@
+{
+  "metadata": { "schemaVersion": "1.0", "specId": "feature", "revision": 1, "status": "draft" },
+  "purpose": { "problem": "Describe the evidenced problem.", "objective": "Describe the intended outcome.", "users": [] },
+  "scope": { "included": [], "excluded": [] },
+  "sources": [],
+  "requirements": [],
+  "acceptanceCriteria": [],
+  "constraints": [],
+  "dependencies": [],
+  "decisions": [],
+  "assumptions": [],
+  "questions": [],
+  "applicability": [],
+  "history": [{ "revision": 1, "summary": "Initial draft; intake and normalization pending.", "evidence": "Initial user request" }]
+}

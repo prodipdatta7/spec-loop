@@ -1,0 +1,53 @@
+{
+  "name": "specloop",
+  "version": "0.1.0",
+  "description": "Spec-driven development with independent agent review.",
+  "type": "module",
+  "bin": {
+    "specloop": "installer/cli.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check installer/cli.js && node --test",
+    "release:check": "node validation/release-check.js",
+    "prepublishOnly": "npm run check && npm run release:check"
+  },
+  "files": [
+    "core",
+    "adapters",
+    "installer",
+    "validation",
+    "docs",
+    "README.md",
+    "NOTICE"
+  ],
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "yaml": "^2.8.1"
+  },
+  "keywords": [
+    "spec-driven",
+    "ai-agents",
+    "code-review",
+    "coding-assistant",
+    "workflow",
+    "cli"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": "Apache-2.0",
+  "author": "prodipdatta7",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prodipdatta7/spec-loop.git"
+  },
+  "homepage": "https://github.com/prodipdatta7/spec-loop#readme",
+  "bugs": {
+    "url": "https://github.com/prodipdatta7/spec-loop/issues"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules/
+*.tgz
+/session-*.md
+.agentic-workflow/runs/
+.agentic-workflow/installation.json
