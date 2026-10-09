@@ -1,5 +1,5 @@
 {
-  "name": "specloop",
+  "name": "@prodipdatta7/specloop",
   "version": "0.1.0",
   "description": "Spec-driven development with independent agent review.",
   "type": "module",

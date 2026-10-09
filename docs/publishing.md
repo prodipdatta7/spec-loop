@@ -1,6 +1,6 @@
 # Publishing SpecLoop
 
-SpecLoop is prepared as the public npm package `specloop`, with the command `specloop`. Publishing is a separate maintainer action; preparation and testing do not upload a release.
+SpecLoop is prepared as the public npm package `@prodipdatta7/specloop`, with the command `specloop`. Publishing is a separate maintainer action; preparation and testing do not upload a release.
 
 ## First release
 
@@ -26,10 +26,10 @@ Create an npm account with publishing authentication configured, then sign in yo
 ```sh
 npm login
 npm whoami
-npm view specloop name version
+npm view @prodipdatta7/specloop name version
 ```
 
-On 2026-10-10, the public registry returned E404 for `specloop`. Recheck before publishing: this observation is not a reservation or a guarantee that npm accepts the name. If another owner holds the name, choose an available name or your own npm scope and update the package metadata and documentation consistently.
+npm rejected the unscoped name `specloop` because it is too similar to the existing `spec-loop` package. The distribution therefore uses the author-owned scope `@prodipdatta7/specloop`. The project and CLI remain SpecLoop and `specloop`.
 
 When the release contents and metadata are ready, run:
 
@@ -43,8 +43,8 @@ npm publish
 After successful publication, verify the release:
 
 ```sh
-npm view specloop version
-npm install -g specloop
+npm view @prodipdatta7/specloop version
+npm install -g @prodipdatta7/specloop
 specloop --help
 ```
 

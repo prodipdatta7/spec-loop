@@ -1,6 +1,6 @@
 # Installation guide
 
-These instructions install **SpecLoop**. Its npm package and terminal command are both named `specloop`.
+These instructions install **SpecLoop**. Its npm package is `@prodipdatta7/specloop`; its terminal command is `specloop`.
 
 Install the command-line package once, then add the adapter for your coding assistant to each project where you want to use it.
 
@@ -112,7 +112,7 @@ specloop uninstall
 Specs, sources, and run history are preserved. User edits to managed files are also preserved. To remove the global command afterward, run:
 
 ```sh
-npm uninstall -g specloop
+npm uninstall -g @prodipdatta7/specloop
 ```
 
 ## Optional personal defaults
@@ -136,10 +136,10 @@ This is an initial implementation. Automated package tests pass, but end-to-end 
 
 ## Future npm installation
 
-If the maintainer publishes this package under the name `specloop`, users will be able to replace steps 1 and 2 with:
+If the maintainer publishes this package under the name `@prodipdatta7/specloop`, users will be able to replace steps 1 and 2 with:
 
 ```sh
-npm install -g specloop
+npm install -g @prodipdatta7/specloop
 ```
 
 This is a future distribution option, not a claim that an official npm release is available. Installing the selected project adapter and restarting the assistant will still be required.

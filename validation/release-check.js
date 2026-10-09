@@ -29,7 +29,7 @@ try {
   const consumer = path.join(temp, 'consumer');
   fs.mkdirSync(consumer);
   execute([npm, 'install', '--prefix', consumer, '--ignore-scripts', '--dry-run=false', '--no-audit', '--no-fund', path.join(temp, packed.filename)]);
-  const installed = path.join(consumer, 'node_modules', 'specloop');
+  const installed = path.join(consumer, 'node_modules', ...packed.name.split('/'));
   const cli = path.join(installed, 'installer', 'cli.js');
   const pkg = JSON.parse(fs.readFileSync(path.join(installed, 'package.json'), 'utf8'));
   assert.equal(pkg.bin.specloop, 'installer/cli.js');
