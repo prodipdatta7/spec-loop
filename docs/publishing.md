@@ -48,7 +48,7 @@ npm install -g @prodipdatta7/specloop
 specloop --help
 ```
 
-Update the installation guide's future-publication wording only after the release exists. The native-host validation limits in the README should remain until those integrations are actually exercised.
+Keep the installation guide aligned with the published package name. The native-host validation limits in the README should remain until those integrations are actually exercised.
 
 ## Subsequent releases
 

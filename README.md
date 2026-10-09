@@ -10,16 +10,14 @@ The host agent performs interpretation, implementation and delegation. A Node.js
 
 ## Install
 
-See the [step-by-step installation guide](docs/installation.md) for downloading the repository, choosing an adapter, updating, and uninstalling.
+See the [step-by-step installation guide](docs/installation.md) for installing the package, choosing an adapter, updating, and uninstalling.
 
 Requires Node.js 22 or newer and your selected host. No other coding host is required.
 
-From this package directory:
+Install the [npm package](https://www.npmjs.com/package/@prodipdatta7/specloop):
 
 ```sh
-npm ci
-npm test
-npm install -g .
+npm install -g @prodipdatta7/specloop
 ```
 
 From the target project:

@@ -10,11 +10,10 @@ For the full setup process, see the [installation guide](installation.md).
 
 You need **Node.js 22 or newer**, your coding assistant, and access to a model that supports the configured reviewer settings.
 
-Open a terminal in this repository and run:
+Open a terminal and install the package:
 
 ```sh
-npm ci
-npm install -g .
+npm install -g @prodipdatta7/specloop
 ```
 
 Then open a terminal in **the project you want the assistant to work on** and run:

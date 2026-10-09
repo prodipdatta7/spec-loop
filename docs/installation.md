@@ -12,37 +12,18 @@ Install the command-line package once, then add the adapter for your coding assi
 
 You do not need all five coding assistants installed.
 
-## 1. Get the repository
+## 1. Install the command-line package
 
-Download and extract [the repository](https://github.com/prodipdatta7/spec-loop), or clone it:
-
-```sh
-git clone https://github.com/prodipdatta7/spec-loop.git
-cd spec-loop
-```
-
-Open a terminal in the extracted or cloned folder—the one containing `package.json`.
-
-The instructions below install from that local copy. They do not require the package to be published to npm.
-
-## 2. Install the command-line package
-
-Run:
+Open a terminal and run:
 
 ```sh
-npm ci
-npm install -g .
-```
-
-`npm ci` installs the package's dependencies. `npm install -g .` makes the `specloop` command available in your terminal. Keep the local repository folder in place, since a global installation from a local directory can link to it.
-
-Check that the command is available:
-
-```sh
+npm install -g @prodipdatta7/specloop
 specloop --help
 ```
 
-## 3. Install your project's adapter
+The package is named `@prodipdatta7/specloop` on npm. The command remains `specloop`. You do not need to download this repository for a normal installation.
+
+## 2. Install your project's adapter
 
 Open a terminal in **the project you want your assistant to work on**. This is usually a different folder from this package's repository.
 
@@ -76,7 +57,7 @@ specloop install codex
 
 The adapter adds a skill, an independent reviewer definition, shared workflow files, and activation instructions. Existing unrelated project instructions are preserved; conflicting managed files are reported instead of overwritten.
 
-## 4. Restart your assistant and try it
+## 3. Restart your assistant and try it
 
 Restart or reload your coding assistant so it discovers the installed files. Confirm that its configured reviewer model is available in your account.
 
@@ -96,9 +77,10 @@ The assistant handles the workflow. Running the installation commands alone does
 
 ## Updating or removing the installation
 
-After obtaining an updated copy of this package, rerun `npm ci` and `npm install -g .` from its folder. Then run this from each target project:
+Update the global package, then refresh the adapter in each target project:
 
 ```sh
+npm install -g @prodipdatta7/specloop@latest
 specloop update
 ```
 
@@ -134,12 +116,15 @@ Project configuration takes precedence over personal settings. Personal Cursor i
 
 This is an initial implementation. Automated package tests pass, but end-to-end operation through all five generated adapters remains unverified. See [validation status](integration-status.md).
 
-## Future npm installation
+## Install from source instead
 
-If the maintainer publishes this package under the name `@prodipdatta7/specloop`, users will be able to replace steps 1 and 2 with:
+For development or local modifications, clone [the repository](https://github.com/prodipdatta7/spec-loop):
 
 ```sh
-npm install -g @prodipdatta7/specloop
+git clone https://github.com/prodipdatta7/spec-loop.git
+cd spec-loop
+npm ci
+npm install -g .
 ```
 
-This is a future distribution option, not a claim that an official npm release is available. Installing the selected project adapter and restarting the assistant will still be required.
+Keep the local repository folder in place because a global installation from a local directory can link to it. Then install the adapter from your target project using step 2 above.
